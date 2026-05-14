@@ -16,12 +16,6 @@
     },
     "adminPassword": {
       "value": "Password@12345"
-    },
-    "keyVaultName": {
-      "value": "bicep-demo-kv"
-    },
-    "tenantId": {
-      "value": "YOUR-TENANT-ID"
     }
   }
 }
