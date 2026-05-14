@@ -16,12 +16,6 @@
     },
     "adminPassword": {
       "value": "Password@1234"
-    },
-    "keyVaultName": {
-      "value": "prod-kv-12345"
-    },
-    "tenantId": {
-      "value": "YOUR-TENANT-ID"
     }
   }
 }
