@@ -8,9 +8,6 @@ param adminUsername string
 @secure()
 param adminPassword string
  
-param keyVaultName string
-param tenantId string
- 
 module storageModule './modules/storage.bicep' = {
   name: 'storageDeploy'
  
