@@ -5,7 +5,7 @@ param adminUsername string
 @secure()
 param adminPassword string
  
-// Virtual Network
+// Vnet
 resource vnet 'Microsoft.Network/virtualNetworks@2023-02-01' = {
   name: '${vmName}-vnet'
   location: location
@@ -29,7 +29,7 @@ resource vnet 'Microsoft.Network/virtualNetworks@2023-02-01' = {
   }
 }
  
-// Public IP
+// Pub ip
 resource publicIP 'Microsoft.Network/publicIPAddresses@2023-02-01' = {
   name: '${vmName}-pip'
   location: location
@@ -69,7 +69,7 @@ resource nic 'Microsoft.Network/networkInterfaces@2023-02-01' = {
   }
 }
  
-// Linux Virtual Machine
+// Linux VM
 resource vm 'Microsoft.Compute/virtualMachines@2023-03-01' = {
   name: vmName
   location: location
