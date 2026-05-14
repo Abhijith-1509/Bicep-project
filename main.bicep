@@ -27,3 +27,12 @@ module vmModule './modules/vm.bicep' = {
     adminPassword: adminPassword
   }
 }
+
+module kvModule './modules/keyvault.bicep' = {
+  name: 'kvDeploy'
+ 
+  params: {
+    keyVaultName: keyVaultName
+    location: location
+  }
+}
