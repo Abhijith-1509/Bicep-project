@@ -7,7 +7,7 @@ param adminPassword string
  
 // Virtual Network
 resource vnet 'Microsoft.Network/virtualNetworks@2023-02-01' = {
-  name: 'bicep-demo-vnet'
+  name: '${vmName}-vnet'
   location: location
  
   properties: {
