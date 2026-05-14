@@ -23,18 +23,4 @@ stages:
           --template-file main.bicep \
           --parameters @environments/dev.parameters.json
  
-- stage: DeployProd
-  dependsOn: DeployDev
-  jobs:
-  - job: DeployProdJob
-    steps:
-    - task: AzureCLI@2
-      inputs:
-        azureSubscription: 'asahi-task-demo'
-        scriptType: 'bash'
-        scriptLocation: 'inlineScript'
-        inlineScript: |
-          az deployment group create \
-          --resource-group bicep-deployment-rg \
-          --template-file main.bicep \
-          --parameters @environments/prod.parameters.json
+
