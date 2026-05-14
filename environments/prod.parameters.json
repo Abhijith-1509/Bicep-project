@@ -14,8 +14,8 @@
     "adminUsername": {
       "value": "azureuser"
     },
-    "adminPassword": {
-      "value": "Password@1234"
+    "KeyVaultName": {
+      "value": "linuxdemo-kv-1509"
     }
   }
 }
