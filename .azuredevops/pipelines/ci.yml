@@ -1,0 +1,28 @@
+trigger:
+  branches:
+    include:
+      - feature/*
+      - main
+ 
+pool:
+  vmImage: 'ubuntu-latest'
+ 
+steps:
+- task: AzureCLI@2
+  inputs:
+    azureSubscription: 'YOUR-SERVICE-CONNECTION'
+    scriptType: 'bash'
+    scriptLocation: 'inlineScript'
+    inlineScript: |
+      az bicep build --file main.bicep
+ 
+- task: AzureCLI@2
+  inputs:
+    azureSubscription: 'YOUR-SERVICE-CONNECTION'
+    scriptType: 'bash'
+    scriptLocation: 'inlineScript'
+    inlineScript: |
+      az deployment group what-if \
+      --resource-group bicep-deployment-rg \
+      --template-file main.bicep \
+      --parameters @environments/dev.parameters.json

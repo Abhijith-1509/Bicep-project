@@ -1,0 +1,27 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "location": {
+      "value": "eastus"
+    },
+    "storageAccountName": {
+      "value": "bicepstore12345"
+    },
+    "vmName": {
+      "value": "bicep-demo-vm"
+    },
+    "adminUsername": {
+      "value": "azureuser"
+    },
+    "adminPassword": {
+      "value": "Password@12345"
+    },
+    "keyVaultName": {
+      "value": "bicep-demo-kv"
+    },
+    "tenantId": {
+      "value": "YOUR-TENANT-ID"
+    }
+  }
+}
