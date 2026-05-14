@@ -14,7 +14,7 @@ stages:
     steps:
     - task: AzureCLI@2
       inputs:
-        azureSubscription: 'YOUR-SERVICE-CONNECTION'
+        azureSubscription: 'asahi-task-demo'
         scriptType: 'bash'
         scriptLocation: 'inlineScript'
         inlineScript: |
@@ -30,11 +30,11 @@ stages:
     steps:
     - task: AzureCLI@2
       inputs:
-        azureSubscription: 'YOUR-SERVICE-CONNECTION'
+        azureSubscription: 'asahi-task-demo'
         scriptType: 'bash'
         scriptLocation: 'inlineScript'
         inlineScript: |
           az deployment group create \
-          --resource-group prod-rg \
+          --resource-group bicep-deployment-rg \
           --template-file main.bicep \
           --parameters @environments/prod.parameters.json
