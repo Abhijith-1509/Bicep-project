@@ -3,6 +3,13 @@ trigger:
     include:
       - feature/*
       - main/*
+
+pr:
+  branches:
+    include:
+      - main
+      - feature/*
+
  
 pool:
   vmImage: 'ubuntu-latest'
