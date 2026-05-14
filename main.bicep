@@ -31,7 +31,8 @@ module vmModule './modules/vm.bicep' = {
   }
 }
  
-module kvModule './modules/keyvault.bicep' = {
+  module kvModule './modules/
+keyvault.bicep' = {
   name: 'kvDeploy'
  
   params: {
