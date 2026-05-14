@@ -35,7 +35,7 @@ resource publicIP 'Microsoft.Network/publicIPAddresses@2023-02-01' = {
   location: location
  
   sku: {
-    name: 'Basic'
+    name: 'Standard'
   }
  
   properties: {
