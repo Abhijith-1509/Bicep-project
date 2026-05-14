@@ -2,6 +2,7 @@ trigger:
   branches:
     include:
       - main
+      - feature
  
 pool:
   vmImage: 'ubuntu-latest'
@@ -9,7 +10,6 @@ pool:
 stages:
 
 - stage: DeployProd
-  dependsOn: DeployDev
   jobs:
   - job: DeployProdJob
     steps:
