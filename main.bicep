@@ -27,3 +27,5 @@ module vmModule './modules/vm.bicep' = {
     adminPassword: adminPassword
   }
 }
+
+
