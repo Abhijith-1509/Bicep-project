@@ -6,7 +6,7 @@
       "value": "eastus"
     },
     "storageAccountName": {
-      "value": "bicepspace12345"
+      "value": "bicepspace1509"
     },
     "vmName": {
       "value": "bicep-demo-vm"
