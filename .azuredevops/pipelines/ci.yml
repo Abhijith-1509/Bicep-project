@@ -1,7 +1,6 @@
 trigger:
   branches:
     include:
-      - feature/*
       - main/*
 
 pr:
