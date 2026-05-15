@@ -6,7 +6,7 @@
       "value": "Central India"
     },
     "storageAccountName": {
-      "value": "prodstorage12345"
+      "value": "storageacc2345"
     },
     "vmName": {
       "value": "prod-vm"
